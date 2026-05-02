@@ -27,7 +27,7 @@ def make_scrollable_frame(parent):
     # the frame that contains everything
     # holds the canvas and the scrollbar together
     outer_frame = Frame(parent, bg="pink")
-    outer_frame.grid(row=0, column=0, sticky="nsew")
+    outer_frame.pack(fill=BOTH, expand=True)
 
     outer_frame.rowconfigure(0, weight=1)
     outer_frame.columnconfigure(0, weight=0)
@@ -66,18 +66,10 @@ def make_scrollable_frame(parent):
 class View_outfits_window:
     
     def __init__(self, parent):
-   
-        self.window = Toplevel(parent) 
-        self.window.title("View outfits")
+        self.window = parent 
         self.build()
         
-    def build(self):
-        self.window.config(bg = "pink")
-        self.window.geometry("800x600")
-        
-        self.window.rowconfigure(0, weight=1)
-        self.window.columnconfigure(0, weight=1)
-        
+    def build(self):        
         inner_frame = make_scrollable_frame(self.window)
         
         for i in range(10):
@@ -94,16 +86,13 @@ class View_outfits_window:
 class add_item_window():
     
     def __init__(self, parent, category):
-        self.window = Toplevel(parent)
-        self.window.title(f"Add {category}")
-        self.window.geometry("700x700")
-        self.window.config(bg="pink")
+        self.window = parent
         self.image_path=None
         self.category = category
         self.build()
         
     def build(self):
-        
+        # title
         Label(self.window, text=f"Add {self.category}", bg="pink", 
               font=("Arial", 16, "bold")).pack(pady=20)
 
@@ -143,8 +132,12 @@ class add_item_window():
         Button(self.window, text="Save", bg="green", fg="white", 
                width=15, command=self.save_item).pack(pady=10)
         Button(self.window, text="Cancel", bg="red", fg="white", 
-               width=15, command=self.window.destroy).pack()
+               width=15, command=self.clear_frame).pack()
         
+    def clear_frame(self):
+        for widget in self.window.winfo_children():
+            widget.destroy()
+            
     def upload_image(self):
          
         # opens the file browser 
@@ -179,24 +172,18 @@ class add_item_window():
         print(f"Saving: {name}, {color}, {category}, {occasion}, {self.image_path}")
         
         messagebox.showinfo("Success", f"{name} added successfully!")
-        self.window.destroy()
+        self.clear_frame()
         
         
+# this is the class for the wardrobe
 class view_wardrobe_window:
     
     def __init__(self, parent, category = None):
-        self.window = Toplevel(parent)
+        self.window = parent
         self.category = category
-        self.window.title(f"View {category if category else 'wardrobe'}")
-        self.window.geometry("800x600")
-        self.window.config(bg = "pink")
         self.build()
         
     def build(self):
-        
-        self.window.rowconfigure(0, weight=1)
-        self.window.columnconfigure(0, weight=1)
-        
         inner_frame = make_scrollable_frame(self.window)
      
     #--------------will uncomemt after the csv files are ready-----------------
@@ -254,16 +241,21 @@ class Outfit_manager:
     def build_menu(self):
         self.window.title("Outfit manager")
         self.window.config(bg = "pink")
-       # self.window.config(padx=300, pady=300)
         self.window.geometry("1000x1000")
         set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
+        
+        # the frame that will change depending on the button presses
+        self.content_frame = Frame(self.window)
+        self.content_frame.pack(fill=BOTH, expand=True)
+        
+        self.show_home()
         # creating the menu
         menubar = Menu(self.window)
         
         # adding the main menu
         main_menu = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Main menu", menu = main_menu)
-        main_menu.add_command(label = "Home", command = None)
+        main_menu.add_command(label = "Home", command = self.show_home)
         main_menu.add_command(label = "Settings", command = None)
         main_menu.add_separator()
         main_menu.add_command(label = "Exit", command = self.window.destroy)
@@ -271,28 +263,28 @@ class Outfit_manager:
         # adding the 'add item' menu
         add_item = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Add item", menu = add_item)
-        add_item.add_command(label = "Add top", command = lambda: add_item_window(self.window, "top"))
-        add_item.add_command(label = "Add bottom", command = lambda: add_item_window(self.window, "bottom"))
-        add_item.add_command(label = "Add shoes", command = lambda: add_item_window(self.window, "shoes"))
-        add_item.add_command(label = "Add dresses", command = lambda: add_item_window(self.window, "dress"))
+        add_item.add_command(label = "Add top", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "top")])
+        add_item.add_command(label = "Add bottom", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bottom")])
+        add_item.add_command(label = "Add shoes", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "shoes")])
+        add_item.add_command(label = "Add dresses", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "dress")])
         add_item.add_separator()
-        add_item.add_command(label = "Add accesories", command = lambda: add_item_window(self.window, "accesories"))
-        add_item.add_command(label = "Add bag", command = lambda: add_item_window(self.window, "bag"))
-        add_item.add_command(label = "Add another item", command = lambda: add_item_window(self.window, "item"))
+        add_item.add_command(label = "Add accessory", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "aaccessory")])
+        add_item.add_command(label = "Add bag", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bag")])
+        add_item.add_command(label = "Add another item", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "item")])
         
         # adding the 'View wardrobe' menu
         view_wardrobe = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "View wardrobe", menu = view_wardrobe)
-        view_wardrobe.add_command(label = "View all", command = lambda: view_wardrobe_window(self.window, None))
+        view_wardrobe.add_command(label = "View all", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, None)])
         view_wardrobe.add_separator()
-        view_wardrobe.add_command(label = "View tops", command = lambda: view_wardrobe_window(self.window, "top"))
-        view_wardrobe.add_command(label = "View bottoms", command = lambda: view_wardrobe_window(self.window, "bottom"))
-        view_wardrobe.add_command(label = "View dresses", command = lambda: view_wardrobe_window(self.window, "dress"))
-        view_wardrobe.add_command(label = "View shoes", command = lambda: view_wardrobe_window(self.window, "shoes"))
+        view_wardrobe.add_command(label = "View tops", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "top")])
+        view_wardrobe.add_command(label = "View bottoms", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "bottom")])
+        view_wardrobe.add_command(label = "View dresses", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "dress")])
+        view_wardrobe.add_command(label = "View shoes", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "shoes")])
         view_wardrobe.add_separator()
-        view_wardrobe.add_command(label = "View accesories", command = lambda: view_wardrobe_window(self.window, "accessory"))
-        view_wardrobe.add_command(label = "View bags", command = lambda: view_wardrobe_window(self.window, "bag"))
-        view_wardrobe.add_command(label = "View others", command = "other")
+        view_wardrobe.add_command(label = "View accessory", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "accessory")])
+        view_wardrobe.add_command(label = "View bags", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "bag")])
+        view_wardrobe.add_command(label = "View others", command = lambda: [self.clear_content(), view_wardrobe_window(self.content_frame, "item")])
         
         # adding the 'Create outfit' menu
         create_outfit = Menu(menubar, tearoff = 0)
@@ -303,7 +295,7 @@ class Outfit_manager:
         # adding the 'View outfits' menu
         view_outfits = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "View outfits", menu = view_outfits)
-        view_outfits.add_command(label = "View all outfits", command = lambda: View_outfits_window(self.window))
+        view_outfits.add_command(label = "View all outfits", command = lambda: [self.clear_content(), View_outfits_window(self.content_frame)])
         
         # adding the 'About us' menu
         about_us = Menu(menubar, tearoff = 0)
@@ -313,6 +305,14 @@ class Outfit_manager:
         
         # this adds the menu
         self.window.config(menu = menubar)
+        
+    def clear_content(self):
+        for widget in self.content_frame.winfo_children():
+            widget.destroy()
+            
+    def show_home(self):
+        self.clear_content()
+        set_backgrond(self.content_frame, "images/background/clothes-bkg.jpg", 1000, 1000)
         
 window = Tk()
 wardrobe = []
