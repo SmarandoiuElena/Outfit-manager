@@ -7,7 +7,26 @@ def about_elena():
     
 def about_bianca():
     messagebox.showinfo("About", "Lazăr Bianca\nOutfit Manager App 2026")
+
+
+# this is the class for the view outfits window
+class View_outfits_window:
     
+    def __init__(self, parent):
+   
+        self.window = Toplevel(parent) 
+        self.window.title("View outfits")
+        self.build()
+        
+    def build(self):
+        self.window.config(bg = "pink")
+        self.window.config(padx=300, pady=300)
+        canvas = Canvas(self.window, height=200, width=200, bg = "white")
+        canvas.grid(row=0, column=1)
+        scrollbar = Scrollbar(self.window, orient=VERTICAL, command=canvas.yview)
+        scrollbar.pack(side = LEFT, fill=Y)
+        
+# this is the class for the Outfit manager app  
 class Outfit_manager:
     
     def __init__(self, window, wardrobe):
@@ -68,7 +87,7 @@ class Outfit_manager:
         # adding the 'View outfits' menu
         view_outfits = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "View outfits", menu = view_outfits)
-        view_outfits.add_command(label = "View all outfits", command = None)
+        view_outfits.add_command(label = "View all outfits", command = lambda: View_outfits_window(self.window))
         
         # adding the 'About us' menu
         about_us = Menu(menubar, tearoff = 0)
