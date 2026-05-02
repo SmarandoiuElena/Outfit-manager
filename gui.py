@@ -79,6 +79,7 @@ class View_outfits_window:
             Label(card, text=f"Outfit {i+1}", bg="white", font=("Arial", 12)).pack(anchor="w")
            
      
+# this is the class for adding an item
 class add_item_window():
     
     def __init__(self, parent, category):
@@ -169,6 +170,68 @@ class add_item_window():
         messagebox.showinfo("Success", f"{name} added successfully!")
         self.window.destroy()
         
+        
+class view_wardrobe_window:
+    
+    def __init__(self, parent, category = None):
+        self.window = Toplevel(parent)
+        self.category = category
+        self.window.title(f"View {category if category else 'wardrobe'}")
+        self.window.geometry("800x600")
+        self.window.config(bg = "pink")
+        self.build()
+        
+    def build(self):
+        
+        self.window.rowconfigure(0, weight=1)
+        self.window.columnconfigure(0, weight=1)
+        
+        inner_frame = make_scrollable_frame(self.window)
+     
+    #--------------will uncomemt after the csv files are ready-----------------
+       # if self.category:
+            
+        #    items_to_show = []   
+         #   for item in self.wardrobe.items:
+          #      if item.category == self.category:
+           #         items_to_show.append(item)
+                
+        #else:
+         #   items_to_show = self.wardrobe.items
+            
+        #for item in items_to_show:
+            
+         #   card = Frame(inner_frame, bg="white", height=150)
+          #  card.pack_propagate(False)
+           # card.pack(pady=8, padx=20, fill=X)
+            
+        # test cards
+         
+# TO DO -------------------------- FILTER BUTTON
+        for i in range(10):
+            
+            card = Frame(inner_frame, bg = "white", height=500, width=400)
+            card.pack_propagate(False)
+            card.pack(pady=8, padx=20)
+            
+            # image on the left
+            image_label = Label(card, bg="white", text="no image")
+            image_label.place(relx=0.0, rely=0.5, anchor="w")
+            
+            # item info in the middle
+            Label(card, text=f"Item {i+1}", bg="white", 
+                  font=("Arial", 12, "bold")).place(relx=0.3, rely=0.3, anchor="w")
+            Label(card, text="Color: blue", bg="white",
+                  font=("Arial", 10)).place(relx=0.3, rely=0.6, anchor="w")
+            
+            # delete button bottom right
+            Button(card, text="Delete", bg="red", fg="black",
+                   width=10).place(relx=1.0, rely=1.0, anchor="se")
+            
+            # favourite button bottom left
+            Button(card, text="Favourite", bg="pink", fg="black",
+                   width=10).place(relx=0.0, rely=1.0, anchor="sw")
+            
 # this is the class for the Outfit manager app  
 class Outfit_manager:
     
@@ -209,16 +272,16 @@ class Outfit_manager:
         # adding the 'View wardrobe' menu
         view_wardrobe = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "View wardrobe", menu = view_wardrobe)
-        view_wardrobe.add_command(label = "View all", command = None)
+        view_wardrobe.add_command(label = "View all", command = lambda: view_wardrobe_window(self.window, None))
         view_wardrobe.add_separator()
-        view_wardrobe.add_command(label = "View tops", command = None)
-        view_wardrobe.add_command(label = "View bottoms", command = None)
-        view_wardrobe.add_command(label = "View dresses", command = None)
-        view_wardrobe.add_command(label = "View shoes", command = None)
+        view_wardrobe.add_command(label = "View tops", command = lambda: view_wardrobe_window(self.window, "top"))
+        view_wardrobe.add_command(label = "View bottoms", command = lambda: view_wardrobe_window(self.window, "bottom"))
+        view_wardrobe.add_command(label = "View dresses", command = lambda: view_wardrobe_window(self.window, "dress"))
+        view_wardrobe.add_command(label = "View shoes", command = lambda: view_wardrobe_window(self.window, "shoes"))
         view_wardrobe.add_separator()
-        view_wardrobe.add_command(label = "View accesories", command = None)
-        view_wardrobe.add_command(label = "View bags", command = None)
-        view_wardrobe.add_command(label = "View others", command = None)
+        view_wardrobe.add_command(label = "View accesories", command = lambda: view_wardrobe_window(self.window, "accessory"))
+        view_wardrobe.add_command(label = "View bags", command = lambda: view_wardrobe_window(self.window, "bag"))
+        view_wardrobe.add_command(label = "View others", command = "other")
         
         # adding the 'Create outfit' menu
         create_outfit = Menu(menubar, tearoff = 0)
