@@ -10,6 +10,17 @@ def about_elena():
 def about_bianca():
     messagebox.showinfo("About", "Lazăr Bianca\nOutfit Manager App 2026")
 
+
+def set_backgrond(window, image_path, x, y):
+
+    image = Image.open(image_path)
+    image = image.resize((x, y))
+    photo = ImageTk.PhotoImage(image)
+    
+    background = Label(window, image = photo)
+    background.image = photo
+    background.place(x=0, y=0, relwidth=1, relheight=1)
+    
 # making the scrollbar
 # we put the frames inside the canvas and scroll the canvas 
 def make_scrollable_frame(parent):
@@ -243,9 +254,9 @@ class Outfit_manager:
     def build_menu(self):
         self.window.title("Outfit manager")
         self.window.config(bg = "pink")
-        self.window.config(padx=300, pady=300)
-        self.window.geometry("600x600")
-   
+       # self.window.config(padx=300, pady=300)
+        self.window.geometry("1000x1000")
+        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
         # creating the menu
         menubar = Menu(self.window)
         
