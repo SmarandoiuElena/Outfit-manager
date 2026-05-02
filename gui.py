@@ -1,5 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
+from tkinter import filedialog
+from  PIL import Image, ImageTk
 import os.path
 
 def about_elena():
@@ -68,14 +70,105 @@ class View_outfits_window:
         inner_frame = make_scrollable_frame(self.window)
         
         for i in range(10):
-            card = Frame(inner_frame, bg = "white", height=800, width=500)
+            card = Frame(inner_frame, bg = "white", height=700, width=600)
             card.pack_propagate(False)
             card.pack(pady=10)
             
-            Button(card, text="Delete", bg="red", fg="white", width=10).place(relx=1.0, rely=1.0, anchor="se")
+            Button(card, text="Delete", bg="red", fg="black", width=10).place(relx=1.0, rely=1.0, anchor="se")
+            Button(card, text="Add to favourite", bg="pink", fg="black", width=10).place(relx=0.0, rely=1.0, anchor="sw")
             Label(card, text=f"Outfit {i+1}", bg="white", font=("Arial", 12)).pack(anchor="w")
            
      
+class add_item_window():
+    
+    def __init__(self, parent, category):
+        self.window = Toplevel(parent)
+        self.window.title(f"Add {category}")
+        self.window.geometry("700x700")
+        self.window.config(bg="pink")
+        self.image_path=None
+        self.category = category
+        self.build()
+        
+    def build(self):
+        
+        Label(self.window, text=f"Add {self.category}", bg="pink", 
+              font=("Arial", 16, "bold")).pack(pady=20)
+
+        # name field
+        Label(self.window, text="Name:", bg="pink").pack(anchor="w", padx=40)
+        self.name_entry = Entry(self.window, width=40)
+        self.name_entry.pack(padx=40, pady=5)
+        
+        # color field
+        Label(self.window, text="Color:", bg="pink").pack(anchor="w", padx=40)
+        self.color_entry = Entry(self.window, width=40)
+        self.color_entry.pack(padx=40, pady=5)
+        
+        # category dropdown
+        Label(self.window, text="Category:", bg="pink").pack(anchor="w", padx=40)
+        self.category_var = StringVar(value=self.category)
+        OptionMenu(self.window, self.category_var, 
+                   "top", "bottom", "shoes", "dress", 
+                   "accessory", "bag", "other").pack(padx=40, pady=5, anchor="w")
+        
+        # occasion dropdown
+        Label(self.window, text="Occasion:", bg="pink").pack(anchor="w", padx=40)
+        self.occasion_var = StringVar(value="select option")
+        OptionMenu(self.window, self.occasion_var,
+                   "casual", "formal", "sport").pack(padx=40, pady=5, anchor="w")
+        
+        # image upload
+        Label(self.window, text="Photo:", bg="pink").pack(anchor="w", padx=40)
+        Button(self.window, text="Upload photo", 
+               command=self.upload_image).pack(padx=40, pady=5, anchor="w")
+        
+        # image preview
+        self.image_label = Label(self.window, bg="pink", text="no image selected")
+        self.image_label.pack(pady=5)
+
+        # save and cancel buttons
+        Button(self.window, text="Save", bg="green", fg="white", 
+               width=15, command=self.save_item).pack(pady=10)
+        Button(self.window, text="Cancel", bg="red", fg="white", 
+               width=15, command=self.window.destroy).pack()
+        
+    def upload_image(self):
+         
+        # opens the file browser 
+        file_path = filedialog.askopenfilename(
+        filetypes=[("Image files", "*.jpg *.jpeg *.png")]
+        )
+        
+        # if the image exists
+        if file_path:
+            self.image_path = file_path
+            # we open and resize the image for display
+            image = Image.open(file_path)
+            image = image.resize((150, 150))
+            # converting immage for tkinter
+            photo = ImageTk.PhotoImage(image)
+            #displaying for preview
+            self.image_label.config(image = photo, text = "")
+            self.image_label.image = photo
+        
+    def save_item(self):
+        
+        name = self.name_entry.get()
+        color = self.color_entry.get()
+        category = self.category_var.get()
+        occasion = self.occasion_var.get()
+        
+        if not name or not color or not occasion or not self.image_path:
+            messagebox.showerror("Error", "Please fill in all fields!")
+            return
+        
+        # to do: create the clothing item and save it to csv
+        print(f"Saving: {name}, {color}, {category}, {occasion}, {self.image_path}")
+        
+        messagebox.showinfo("Success", f"{name} added successfully!")
+        self.window.destroy()
+        
 # this is the class for the Outfit manager app  
 class Outfit_manager:
     
@@ -104,14 +197,14 @@ class Outfit_manager:
         # adding the 'add item' menu
         add_item = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Add item", menu = add_item)
-        add_item.add_command(label = "Add top", command = None)
-        add_item.add_command(label = "Add bottom", command = None)
-        add_item.add_command(label = "Add shoes", command = None)
-        add_item.add_command(label = "Add dresses", command = None)
+        add_item.add_command(label = "Add top", command = lambda: add_item_window(self.window, "top"))
+        add_item.add_command(label = "Add bottom", command = lambda: add_item_window(self.window, "bottom"))
+        add_item.add_command(label = "Add shoes", command = lambda: add_item_window(self.window, "shoes"))
+        add_item.add_command(label = "Add dresses", command = lambda: add_item_window(self.window, "dress"))
         add_item.add_separator()
-        add_item.add_command(label = "Add accesories", command = None)
-        add_item.add_command(label = "Add bag", command = None)
-        add_item.add_command(label = "Add another item", command = None)
+        add_item.add_command(label = "Add accesories", command = lambda: add_item_window(self.window, "accesories"))
+        add_item.add_command(label = "Add bag", command = lambda: add_item_window(self.window, "bag"))
+        add_item.add_command(label = "Add another item", command = lambda: add_item_window(self.window, "item"))
         
         # adding the 'View wardrobe' menu
         view_wardrobe = Menu(menubar, tearoff = 0)
