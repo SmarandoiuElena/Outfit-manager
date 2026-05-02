@@ -8,6 +8,46 @@ def about_elena():
 def about_bianca():
     messagebox.showinfo("About", "Lazăr Bianca\nOutfit Manager App 2026")
 
+# making the scrollbar
+# we put the frames inside the canvas and scroll the canvas 
+def make_scrollable_frame(parent):
+    # the frame that contains everything
+    # holds the canvas and the scrollbar together
+    outer_frame = Frame(parent, bg="pink")
+    outer_frame.grid(row=0, column=0, sticky="nsew")
+
+    outer_frame.rowconfigure(0, weight=1)
+    outer_frame.columnconfigure(0, weight=0)
+    outer_frame.columnconfigure(1, weight=1)
+    
+    # the scrollbar is on the left
+    scrollbar = Scrollbar(outer_frame, orient=VERTICAL)
+    scrollbar.grid(row=0, column=0, sticky="ns")
+
+    # the canvas that scrolls
+    # we link the canva to the scrollbar
+    canvas = Canvas(outer_frame, bg="pink", yscrollcommand=scrollbar.set)
+    canvas.grid(row=0, column=1, sticky="nsew")
+
+    # connecting the scrollbar to the canvas
+    scrollbar.config(command=canvas.yview)
+
+    # inner frame
+    # this is where we put the widgets
+    inner_frame = Frame(canvas, bg="pink")
+    canvas_window = canvas.create_window((0, 0), window=inner_frame, anchor="nw")
+
+    # update scroll region
+    # how far we scroll
+    def update_scroll(event):
+        canvas.configure(scrollregion=canvas.bbox("all"))
+    inner_frame.bind("<Configure>", update_scroll)
+    
+    def resize_inner(event):
+        canvas.itemconfig(canvas_window, width=event.width)
+    canvas.bind("<Configure>", resize_inner)
+
+    return inner_frame
 
 # this is the class for the view outfits window
 class View_outfits_window:
@@ -20,12 +60,22 @@ class View_outfits_window:
         
     def build(self):
         self.window.config(bg = "pink")
-        self.window.config(padx=300, pady=300)
-        canvas = Canvas(self.window, height=200, width=200, bg = "white")
-        canvas.grid(row=0, column=1)
-        scrollbar = Scrollbar(self.window, orient=VERTICAL, command=canvas.yview)
-        scrollbar.pack(side = LEFT, fill=Y)
+        self.window.geometry("800x600")
         
+        self.window.rowconfigure(0, weight=1)
+        self.window.columnconfigure(0, weight=1)
+        
+        inner_frame = make_scrollable_frame(self.window)
+        
+        for i in range(10):
+            card = Frame(inner_frame, bg = "white", height=800, width=500)
+            card.pack_propagate(False)
+            card.pack(pady=10)
+            
+            Button(card, text="Delete", bg="red", fg="white", width=10).place(relx=1.0, rely=1.0, anchor="se")
+            Label(card, text=f"Outfit {i+1}", bg="white", font=("Arial", 12)).pack(anchor="w")
+           
+     
 # this is the class for the Outfit manager app  
 class Outfit_manager:
     
@@ -38,8 +88,7 @@ class Outfit_manager:
         self.window.title("Outfit manager")
         self.window.config(bg = "pink")
         self.window.config(padx=300, pady=300)
-        canvas = Canvas(self.window, height=200, width=200, bg = "white")
-        canvas.grid(row=0, column=1)
+        self.window.geometry("600x600")
    
         # creating the menu
         menubar = Menu(self.window)
