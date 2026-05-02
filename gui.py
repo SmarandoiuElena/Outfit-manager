@@ -132,7 +132,7 @@ class add_item_window():
         Button(self.window, text="Save", bg="green", fg="white", 
                width=15, command=self.save_item).pack(pady=10)
         Button(self.window, text="Cancel", bg="red", fg="white", 
-               width=15, command=self.clear_frame).pack()
+               width=15, command= lambda: [self.clear_frame(), self.show_home()]).pack()
         
     def clear_frame(self):
         for widget in self.window.winfo_children():
@@ -173,7 +173,11 @@ class add_item_window():
         
         messagebox.showinfo("Success", f"{name} added successfully!")
         self.clear_frame()
+        self.show_home()
         
+    def show_home(self):
+        self.clear_frame()
+        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
         
 # this is the class for the wardrobe
 class view_wardrobe_window:
@@ -245,7 +249,7 @@ class Outfit_manager:
         set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
         
         # the frame that will change depending on the button presses
-        self.content_frame = Frame(self.window)
+        self.content_frame = Frame(self.window, bg = "pink")
         self.content_frame.pack(fill=BOTH, expand=True)
         
         self.show_home()
@@ -268,7 +272,7 @@ class Outfit_manager:
         add_item.add_command(label = "Add shoes", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "shoes")])
         add_item.add_command(label = "Add dresses", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "dress")])
         add_item.add_separator()
-        add_item.add_command(label = "Add accessory", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "aaccessory")])
+        add_item.add_command(label = "Add accessory", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "accessory")])
         add_item.add_command(label = "Add bag", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bag")])
         add_item.add_command(label = "Add another item", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "item")])
         
