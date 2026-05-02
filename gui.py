@@ -1,7 +1,13 @@
 from tkinter import *
+from tkinter import messagebox
 import os.path
 
-
+def about_elena():
+    messagebox.showinfo("About", "Smărăndoiu Elena\nOutfit Manager App 2026")
+    
+def about_bianca():
+    messagebox.showinfo("About", "Lazăr Bianca\nOutfit Manager App 2026")
+    
 class Outfit_manager:
     
     def __init__(self, window, wardrobe):
@@ -22,7 +28,9 @@ class Outfit_manager:
         # adding the main menu
         main_menu = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Main menu", menu = main_menu)
-        main_menu.add_command(label = "Refresh", command = None)
+        main_menu.add_command(label = "Home", command = None)
+        main_menu.add_command(label = "Settings", command = None)
+        main_menu.add_separator()
         main_menu.add_command(label = "Exit", command = self.window.destroy)
         
         # adding the 'add item' menu
@@ -58,12 +66,15 @@ class Outfit_manager:
         create_outfit.add_command(label = "Create from scratch", command = None)
         
         # adding the 'View outfits' menu
-        view_outfis = Menu(menubar, tearoff = 0)
-        menubar.add_cascade(label = "View outfits", menu = view_outfis)
-
+        view_outfits = Menu(menubar, tearoff = 0)
+        menubar.add_cascade(label = "View outfits", menu = view_outfits)
+        view_outfits.add_command(label = "View all outfits", command = None)
+        
         # adding the 'About us' menu
         about_us = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "About us", menu = about_us)
+        about_us.add_command(label = "Smărăndoiu Elena", command = about_elena)
+        about_us.add_command(label = "Lazăr Bianca", command = about_bianca)
         
         # this adds the menu
         self.window.config(menu = menubar)
