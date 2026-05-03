@@ -2,6 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
 from  PIL import Image, ImageTk
+from music import resume_music, pause_music, stop_music, start_music
+import pygame
 import os.path
 
 def about_elena():
@@ -27,7 +29,7 @@ def set_backgrond(window, image_path, x, y):
 def make_scrollable_frame(parent):
     # the frame that contains everything
     # holds the canvas and the scrollbar together
-    set_backgrond(parent, "images/background/strips_bg.jpg", 1000, 1000)
+    set_backgrond(parent, "images/background/strips_bg.jpg", 800, 800)
     outer_frame = Frame(parent, bg="pink")
     outer_frame.pack(fill=BOTH, expand=True)
 
@@ -64,6 +66,79 @@ def make_scrollable_frame(parent):
 
     return inner_frame
 
+
+# this is the class for the setting window
+
+class settings_window:
+    
+    def __init__(self, parent):
+        self.window = parent
+        self.build()
+        
+    def build(self):
+        self.window.config(bg="pink")
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
+        # title
+        Label(self.window, text="Settings", bg="white",
+              font=("Georgia", 24, "bold")).pack(pady=20)
+        
+        # ---- music section ----
+        Label(self.window, text="Choose a song:", bg="white",
+             font=("Arial", 14, "bold")).pack(anchor="w", padx=40, pady=10)
+
+        # this variable stores which song is selected
+        self.song_var = StringVar(value="music/Music1.mpeg")  # default selection
+
+        Radiobutton(self.window, text="Song 1",
+            variable=self.song_var,
+            value="music/Music1.mpeg",
+            bg="white",
+            command=lambda: start_music(self.song_var.get())).pack(anchor="w", padx=40)
+
+        Radiobutton(self.window, text="Song 2",
+            variable=self.song_var,
+            value="music/Music2.mpeg",
+            bg="white",
+            command=lambda: start_music(self.song_var.get())).pack(anchor="w", padx=40)
+
+        Radiobutton(self.window, text="Song 3",
+            variable=self.song_var,
+            value="music/Music3.mpeg",
+            bg="white",
+            command=lambda: start_music(self.song_var.get())).pack(anchor="w", padx=40)
+        
+        # play / pause / stop buttons
+        music_frame = Frame(self.window, bg="white")
+        music_frame.pack(anchor="w", padx=40, pady=5)
+        
+        Button(music_frame, text="▶ Play", bg="green", fg="white",
+               width=10, command=resume_music).pack(side=LEFT, padx=5)
+        Button(music_frame, text="⏸ Pause", bg="orange", fg="white",
+               width=10, command=pause_music).pack(side=LEFT, padx=5)
+        Button(music_frame, text="⏹ Stop", bg="red", fg="white",
+               width=10, command=stop_music).pack(side=LEFT, padx=5)
+        
+        # ---- volume section ----
+        Label(self.window, text="🔊 Volume", bg="white",
+              font=("Arial", 14, "bold")).pack(anchor="w", padx=40, pady=10)
+        
+        # volume slider
+        self.volume_var = DoubleVar(value=0.5)  # default volume 50%
+        volume_slider = Scale(self.window, 
+                              from_=0, to=1,        # range 0 to 1
+                              resolution=0.01,       # step size
+                              orient=HORIZONTAL,     # horizontal slider
+                              variable=self.volume_var,
+                              command=self.change_volume,
+                              bg="white",
+                              length=300,
+                              label="Volume")
+        volume_slider.pack(padx=40, anchor="w")
+        
+    def change_volume(self, value):
+        pygame.mixer.music.set_volume(float(value))
+        
+        
 # this is the class for the view outfits window
 class View_outfits_window:
     
@@ -72,7 +147,7 @@ class View_outfits_window:
         self.build()
         
     def build(self):
-        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)        
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)        
         inner_frame = make_scrollable_frame(self.window)
         
         for i in range(10):
@@ -95,41 +170,41 @@ class add_item_window():
         self.build()
         
     def build(self):
-        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         # title
-        Label(self.window, text=f"Add {self.category}", bg="pink", 
+        Label(self.window, text=f"Add {self.category}", bg="white", 
               font=("Arial", 16, "bold")).pack(pady=20)
 
         # name field
-        Label(self.window, text="Name:", bg="pink").pack(anchor="w", padx=40)
+        Label(self.window, text="Name:", bg="white").pack(anchor="w", padx=40)
         self.name_entry = Entry(self.window, width=40)
         self.name_entry.pack(padx=40, pady=5)
         
         # color field
-        Label(self.window, text="Color:", bg="pink").pack(anchor="w", padx=40)
+        Label(self.window, text="Color:", bg="white").pack(anchor="w", padx=40)
         self.color_entry = Entry(self.window, width=40)
         self.color_entry.pack(padx=40, pady=5)
         
         # category dropdown
-        Label(self.window, text="Category:", bg="pink").pack(anchor="w", padx=40)
+        Label(self.window, text="Category:", bg="white").pack(anchor="w", padx=40)
         self.category_var = StringVar(value=self.category)
         OptionMenu(self.window, self.category_var, 
                    "top", "bottom", "shoes", "dress", 
                    "accessory", "bag", "other").pack(padx=40, pady=5, anchor="w")
         
         # occasion dropdown
-        Label(self.window, text="Occasion:", bg="pink").pack(anchor="w", padx=40)
+        Label(self.window, text="Occasion:", bg="white").pack(anchor="w", padx=40)
         self.occasion_var = StringVar(value="select option")
         OptionMenu(self.window, self.occasion_var,
                    "casual", "formal", "sport").pack(padx=40, pady=5, anchor="w")
         
         # image upload
-        Label(self.window, text="Photo:", bg="pink").pack(anchor="w", padx=40)
+        Label(self.window, text="Photo:", bg="white").pack(anchor="w", padx=40)
         Button(self.window, text="Upload photo", 
                command=self.upload_image).pack(padx=40, pady=5, anchor="w")
         
         # image preview
-        self.image_label = Label(self.window, bg="pink", text="no image selected")
+        self.image_label = Label(self.window, bg="white", text="no image selected")
         self.image_label.pack(pady=5)
 
         # save and cancel buttons
@@ -181,7 +256,7 @@ class add_item_window():
         
     def show_home(self):
         self.clear_frame()
-        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
+        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 800, 800)
         
 # this is the class for the wardrobe
 class view_wardrobe_window:
@@ -192,7 +267,7 @@ class view_wardrobe_window:
         self.build()
         
     def build(self):
-        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         inner_frame = make_scrollable_frame(self.window)
      
     #--------------will uncomemt after the csv files are ready-----------------
@@ -250,8 +325,8 @@ class Outfit_manager:
     def build_menu(self):
         self.window.title("Outfit manager")
         self.window.config(bg = "pink")
-        self.window.geometry("1000x1000")
-        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 1000, 1000)
+        self.window.geometry("800x800")
+        set_backgrond(self.window, "images/background/clothes-bkg.jpg", 800, 800)
         
         # the frame that will change depending on the button presses
         self.content_frame = Frame(self.window, bg = "pink")
@@ -265,7 +340,7 @@ class Outfit_manager:
         main_menu = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Main menu", menu = main_menu)
         main_menu.add_command(label = "Home", command = self.show_home)
-        main_menu.add_command(label = "Settings", command = None)
+        main_menu.add_command(label = "Settings", command = lambda: [self.clear_content(), settings_window(self.content_frame)])
         main_menu.add_separator()
         main_menu.add_command(label = "Exit", command = self.window.destroy)
         
@@ -321,9 +396,4 @@ class Outfit_manager:
             
     def show_home(self):
         self.clear_content()
-        set_backgrond(self.content_frame, "images/background/clothes-bkg.jpg", 1000, 1000)
-        
-window = Tk()
-wardrobe = []
-app = Outfit_manager(window, wardrobe)
-window.mainloop()
+        set_backgrond(self.content_frame, "images/background/clothes-bkg.jpg", 800, 800)
