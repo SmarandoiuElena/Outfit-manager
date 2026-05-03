@@ -20,12 +20,14 @@ def set_backgrond(window, image_path, x, y):
     background = Label(window, image = photo)
     background.image = photo
     background.place(x=0, y=0, relwidth=1, relheight=1)
+    background.lower()
     
 # making the scrollbar
 # we put the frames inside the canvas and scroll the canvas 
 def make_scrollable_frame(parent):
     # the frame that contains everything
     # holds the canvas and the scrollbar together
+    set_backgrond(parent, "images/background/strips_bg.jpg", 1000, 1000)
     outer_frame = Frame(parent, bg="pink")
     outer_frame.pack(fill=BOTH, expand=True)
 
@@ -69,7 +71,8 @@ class View_outfits_window:
         self.window = parent 
         self.build()
         
-    def build(self):        
+    def build(self):
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)        
         inner_frame = make_scrollable_frame(self.window)
         
         for i in range(10):
@@ -92,6 +95,7 @@ class add_item_window():
         self.build()
         
     def build(self):
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)
         # title
         Label(self.window, text=f"Add {self.category}", bg="pink", 
               font=("Arial", 16, "bold")).pack(pady=20)
@@ -188,6 +192,7 @@ class view_wardrobe_window:
         self.build()
         
     def build(self):
+        set_backgrond(self.window, "images/background/strips_bg.jpg", 1000, 1000)
         inner_frame = make_scrollable_frame(self.window)
      
     #--------------will uncomemt after the csv files are ready-----------------
