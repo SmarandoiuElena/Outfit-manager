@@ -14,6 +14,9 @@ wardrobe.outfits = load_outfits(wardrobe.items)
 
 start_music("music/Music1.mpeg")
 
+for item in load_items():
+    wardrobe.add_item(item)
+
 app = Outfit_manager(window, wardrobe)
 
 window.mainloop()

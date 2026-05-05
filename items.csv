@@ -1,3 +1,488 @@
 name,category,color,occasion,image_path
 steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
 alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+another pai of earings,accessory,uniq,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+another pai of earings,accessory,uniq,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+sta,other,golden,sport,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+another pai of earings,accessory,uniq,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+steluta,other,golden,formal,/home/smara/PY101/SnakeGame/sssstar.png
+alta steluta,other,golden,formal,/home/smara/PY101/SnakeGame/star2_0.png
+star,accessory,golden,formal,/home/smara/PY101/SnakeGame/star.png.png
+blue t-shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (1).jpeg
+baggie,bag,black,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (2).jpeg
+black t-shirt,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33 (3).jpeg
+jeans 1,bottom,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.33.jpeg
+sandals,shoes,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (2).jpeg
+shirt,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (3).jpeg
+earings 1,accessory,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (4).jpeg
+sandals 2,shoes,brown,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (5).jpeg
+jeans 2,bottom,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (7).jpeg
+shirt 2,top,pink,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34 (8).jpeg
+t-shirt 2,top,black,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.34.jpeg
+platform sandals,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (1).jpeg
+top 2,top,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (2).jpeg
+top 3,top,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (3).jpeg
+shorts,top,blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (4).jpeg
+corset,top,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35 (5).jpeg
+pumps,shoes,white,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.39.35.jpeg
+baggie 2,bag,golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.25.jpeg
+baggie 3,bag,undefined,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26 (1).jpeg
+work bag,bag,grey,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.26.jpeg
+star earings,accessory,red,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57.jpeg
+ballon jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52 (1).jpeg
+straight jeans,bottom,dark blue,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.44.52.jpeg
+Cercei,accessory,Golden,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+cercei 2,accessory,white,casual,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.42.57 (1).jpeg
+another pai of earings,accessory,uniq,formal,/home/smara/PY101/outfit_manager/photo/WhatsApp Image 2026-05-05 at 16.43.52.jpeg
+sta,other,golden,sport,/home/smara/PY101/SnakeGame/star.png.png
+st,accessory,golden,sport,/home/smara/PY101/SnakeGame/star.png.png
