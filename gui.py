@@ -3,8 +3,13 @@ from tkinter import messagebox
 from tkinter import filedialog
 from  PIL import Image, ImageTk
 from music import resume_music, pause_music, stop_music, start_music
-import pygame
 import os.path
+import pygame
+
+
+from models import ClothingItem
+from csv_handler import save_items
+
 
 def about_elena():
     messagebox.showinfo("About", "Smărăndoiu Elena\nOutfit Manager App 2026")
@@ -163,8 +168,9 @@ class View_outfits_window:
 # this is the class for adding an item
 class add_item_window():
     
-    def __init__(self, parent, category):
+    def __init__(self, parent, category, wardrobe):
         self.window = parent
+        self.wardrobe = wardrobe
         self.image_path=None
         self.category = category
         self.build()
@@ -247,8 +253,10 @@ class add_item_window():
             messagebox.showerror("Error", "Please fill in all fields!")
             return
         
-        # to do: create the clothing item and save it to csv
-        print(f"Saving: {name}, {color}, {category}, {occasion}, {self.image_path}")
+        #create the clothing item and save it to csv
+        item = ClothingItem(name, category, color, occasion, self.image_path)
+        self.wardrobe.add_item(item)
+        save_items(self.wardrobe.items)
         
         messagebox.showinfo("Success", f"{name} added successfully!")
         self.clear_frame()
@@ -347,14 +355,14 @@ class Outfit_manager:
         # adding the 'add item' menu
         add_item = Menu(menubar, tearoff=0)
         menubar.add_cascade(label = "Add item", menu = add_item)
-        add_item.add_command(label = "Add top", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "top")])
-        add_item.add_command(label = "Add bottom", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bottom")])
-        add_item.add_command(label = "Add shoes", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "shoes")])
-        add_item.add_command(label = "Add dresses", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "dress")])
+        add_item.add_command(label = "Add top", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "top", self.wardrobe)])
+        add_item.add_command(label = "Add bottom", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bottom", self.wardrobe)])
+        add_item.add_command(label = "Add shoes", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "shoes", self.wardrobe)])
+        add_item.add_command(label = "Add dresses", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "dress", self.wardrobe)])
         add_item.add_separator()
-        add_item.add_command(label = "Add accessory", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "accessory")])
-        add_item.add_command(label = "Add bag", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bag")])
-        add_item.add_command(label = "Add another item", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "item")])
+        add_item.add_command(label = "Add accessory", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "accessory", self.wardrobe)])
+        add_item.add_command(label = "Add bag", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "bag", self.wardrobe)])
+        add_item.add_command(label = "Add another item", command = lambda: [self.clear_content(), add_item_window(self.content_frame, "item", self.wardrobe)])
         
         # adding the 'View wardrobe' menu
         view_wardrobe = Menu(menubar, tearoff = 0)
