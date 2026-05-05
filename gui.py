@@ -83,6 +83,10 @@ class create_outfit_window:
         self.build()
     
     def build(self):
+        
+        for widget in self.window.winfo_children():
+            widget.destroy()
+            
         set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         inner_frame = make_scrollable_frame(self.window)
 
@@ -205,6 +209,8 @@ class settings_window:
         self.build()
         
     def build(self):
+        for widget in self.window.winfo_children():
+            widget.destroy()
         self.window.config(bg="pink")
         set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         # title
@@ -277,6 +283,8 @@ class View_outfits_window:
         self.build()
         
     def build(self):
+        for widget in self.window.winfo_children():
+            widget.destroy()
         set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         inner_frame = make_scrollable_frame(self.window)
 
@@ -343,7 +351,7 @@ class View_outfits_window:
             btn_frame = Frame(card, bg="white")
             btn_frame.pack(fill="x", pady=8, padx=10)
 
-            Button(btn_frame, text="🗑 Delete", bg="#ff4d4d", fg="white",
+            Button(btn_frame, text="Delete", bg="#ff4d4d", fg="white",
                    font=("Arial", 9),
                    command=lambda o=outfit: self.delete_outfit(o)).pack(side=RIGHT, padx=5)
 
@@ -377,6 +385,8 @@ class add_item_window():
         self.build()
         
     def build(self):
+        for widget in self.window.winfo_children():
+            widget.destroy()
         set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         # title
         Label(self.window, text=f"Add {self.category}", bg="white", 
@@ -476,7 +486,9 @@ class view_wardrobe_window:
         self.build()
         
     def build(self):
-        set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
+        for widget in self.window.winfo_children():
+            widget.destroy()
+        #set_backgrond(self.window, "images/background/strips_bg.jpg", 800, 800)
         inner_frame = make_scrollable_frame(self.window)
 
         # filter by category or show all
@@ -537,6 +549,18 @@ class view_wardrobe_window:
             # Delete Button (Right)
             Button(btn_frame, text="Delete", bg="#ff4d4d", fg="white", font=("Arial", 8),
                    command=lambda i=item: self.delete_item(i)).pack(side="right", padx=10)
+    
+    def delete_item(self, item):
+        confirm = messagebox.askyesno("Delete", f"Delete '{item.name}'?")
+        if confirm:
+            self.wardrobe.remove_item(item.name)
+            save_items(self.wardrobe.items)
+            for widget in self.window.winfo_children():
+                widget.destroy()
+            self.build()
+
+    def toggle_favourite(self, item):
+        messagebox.showinfo("Favourite", f"'{item.name}' added to favourites!")
             
 # this is the class for the Outfit manager app  
 class Outfit_manager:
@@ -547,6 +571,8 @@ class Outfit_manager:
         self.build_menu()
         
     def build_menu(self):
+        for widget in self.window.winfo_children():
+            widget.destroy()
         self.window.title("Outfit manager")
         self.window.config(bg = "pink")
         self.window.geometry("800x800")
